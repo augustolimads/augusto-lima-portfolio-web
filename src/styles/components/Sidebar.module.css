@@ -1,0 +1,103 @@
+.sidebar {
+    max-width: 250px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.header i {
+    font-size: 2rem;
+}
+
+.aboutMe img {
+    height: 170px;
+    border-radius: 4px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutMe a{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.aboutMe a:hover {
+    text-decoration: underline;
+}
+
+.aboutMe a p {
+    margin-bottom: 1rem;
+}
+
+.aboutMe > * + * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.aboutMe hr {
+    border: 1px solid var(--light);
+    border-radius: 1px;
+}
+
+.filter > * + * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: var(--light);
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.filter input{
+    background-color: var(--light);
+    border: none;
+    padding: 0.2rem;
+    width: 100%;
+    outline: none;
+}
+
+.filter input:focus {
+    outline-color: var(--light);
+}
+
+.filter ul {
+    list-style-type: none;
+}
+
+.filter ul > * + * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter li{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.filter li:hover{
+    cursor: pointer;
+    background-color: var(--light);
+}
+
+.filter ul div {
+    background-color: var(--primary);
+    height: 2rem;
+    margin-right: 0.4rem;
+    color: var(--primary);
+    border-radius: 8px 0 0 8px;
+    transition: .3s ease;
+}
+
+.filter ul i {
+    font-size: 1.4rem;
+}
