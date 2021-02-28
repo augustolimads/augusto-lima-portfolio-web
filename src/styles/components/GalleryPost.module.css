@@ -1,0 +1,46 @@
+.galleryPost {
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    border-radius: 4px;
+}
+
+.galleryPost section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 1rem;
+}
+
+.galleryPost p {
+    padding-top: 1rem;
+}
+
+.tagList {
+    padding-top: 1rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tagList *{
+    margin-left: .4rem;
+    margin-top: .4rem;
+}
+
+.galleryPost img {
+    object-fit: cover;
+    width: 15rem;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+@media(max-width: 980px) {   
+    .galleryPost {
+        flex-direction: column;
+    } 
+    .galleryPost img {
+        display: none;
+    }
+}
