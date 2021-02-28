@@ -1,5 +1,6 @@
 .sidebar {
-    max-width: 250px;
+    max-width: 230px;
+    min-width: 175px;
 }
 
 .header {
@@ -95,9 +96,10 @@
     margin-right: 0.4rem;
     color: var(--primary);
     border-radius: 8px 0 0 8px;
-    transition: .3s ease;
+    transition: .25s ease-in-out;
 }
 
 .filter ul i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-right: .4rem;
 }

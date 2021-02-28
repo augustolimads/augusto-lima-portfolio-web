@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Link from "next/link";
 import style from "../styles/components/Sidebar.module.css";
 import { HiMenu, HiSearch, HiPhotograph, HiDocumentText } from "react-icons/hi";
 import data from "../utils/data";
 
 export default function Sidebar() {
+	const [selectedFilter, setSelectedFilter] = useState<string>('')
+
+	function handleSelectedFilter(name:string){
+		if(name === selectedFilter) {
+			setSelectedFilter('')
+		} else {
+			setSelectedFilter(name)
+		}
+	}
+
 	return (
 		<aside className={style.sidebar}>
 			<section className={style.header}>
@@ -13,11 +23,11 @@ export default function Sidebar() {
 						<img src="icons/logo.svg" alt="" />
 					</a>
 				</Link>
-				<div>
+				{/* <div>
 					<i>
 						<HiMenu />
 					</i>
-				</div>
+				</div> */}
 			</section>
 
 			<section className={style.aboutMe}>
@@ -51,15 +61,15 @@ export default function Sidebar() {
 					/>
 				</div> */}
 				<ul>
-					<li>
-						<div style={{ width: ".5rem" }}></div>
+					<li onClick={() => handleSelectedFilter("ARTIGOS")}>
+						<div style={{ width: selectedFilter === 'ARTIGOS' ? ".5rem" : 0 }}></div>
 						<i>
 							<HiDocumentText />
 						</i>
 						<span>Artigos</span>
 					</li>
-					<li>
-						<div style={{ width: ".5rem" }}></div>
+					<li onClick={() => handleSelectedFilter("PORTFOLIO")}>
+						<div style={{ width: selectedFilter === 'PORTFOLIO' ? ".5rem" : 0 }}></div>
 						<i>
 							<HiPhotograph />
 						</i>
