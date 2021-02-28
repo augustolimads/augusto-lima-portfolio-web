@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Sidebar from '../components/Sidebar'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div className="container">
-      <Sidebar />
-    </div>
+    <Layout>
+      oi
+    </Layout>
   )
 }
