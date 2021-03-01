@@ -1,4 +1,6 @@
 .sidebar {
+    position: fixed;
+    z-index: 10;
     max-width: 230px;
     min-width: 175px;
     margin-right: 2rem;
@@ -20,9 +22,11 @@
         display: none;
     }
     .sidebar {
+        width: 400px;
         padding: 1rem;
         height: 100%;
         margin-right: 0;
+        box-shadow: 5px 0px 10px 1px rgba(204, 204, 204, 0.452);
     }
 }
 
@@ -38,7 +42,7 @@
 }
 
 .aboutMe img {
-    height: 170px;
+    height: 132px;
     border-radius: 4px;
     width: 100%;
     object-fit: cover;
@@ -46,7 +50,6 @@
 
 .aboutMe a {
     font-weight: 400;
-    font-size: 1.1rem;
 }
 
 .aboutMe a:hover {
