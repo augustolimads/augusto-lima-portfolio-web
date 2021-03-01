@@ -12,7 +12,6 @@
     flex-direction: column;
     flex: 1;
     height: 100%;
-    padding-left: 230px;
 }
 
 .block > * {

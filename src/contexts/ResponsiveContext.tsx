@@ -4,8 +4,14 @@ export const ResponsiveContext = createContext(undefined);
 
 const ResponsiveProvider = ({ children }) => {
     const [menuActive, setMenuActive] = useState<boolean>(false);
+	const [animationSlider, setAnimationSlider] = useState('');
     
     function handleMenuActive(){
+		if(menuActive) {
+			setAnimationSlider('exit')
+		} else {
+			setAnimationSlider('entrance')
+		}
 		setMenuActive(!menuActive)
 	}
 
@@ -13,7 +19,8 @@ const ResponsiveProvider = ({ children }) => {
 		<ResponsiveContext.Provider
 			value={{
 				handleMenuActive,
-                menuActive
+                menuActive,
+				animationSlider
 			}}
 		>
 			{children}
@@ -27,10 +34,12 @@ export const useResponsiveMenu = () => {
 	const context = useContext(ResponsiveContext);
 	const {
 		handleMenuActive,
-        menuActive
+        menuActive,
+		animationSlider
 	} = context;
 	return {
 		handleMenuActive,
-        menuActive
+        menuActive,
+		animationSlider
 	};
 };

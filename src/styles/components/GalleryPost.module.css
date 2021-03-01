@@ -8,7 +8,6 @@
 
 .galleryPost:hover{
     cursor: pointer;
-    border-left: .3rem solid var(--primary);
     border-radius: 1rem;
 }
 
