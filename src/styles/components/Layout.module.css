@@ -29,3 +29,8 @@
         padding-top: 1.5rem;
     }
 }
+
+.container footer {
+    padding: 2rem 1rem;
+    text-align: center;
+}
