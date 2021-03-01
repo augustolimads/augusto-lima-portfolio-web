@@ -39,7 +39,7 @@
     object-fit: cover;
     width: 15rem;
     height: 100%;
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 1rem;
 }
 
 @media(max-width: 980px) {   

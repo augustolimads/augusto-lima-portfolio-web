@@ -9,10 +9,13 @@ const ResponsiveProvider = ({ children }) => {
     function handleMenuActive(){
 		if(menuActive) {
 			setAnimationSlider('exit')
+			setTimeout(() => {
+				setMenuActive(!menuActive)
+			},200)
 		} else {
 			setAnimationSlider('entrance')
+			setMenuActive(!menuActive)
 		}
-		setMenuActive(!menuActive)
 	}
 
 	return (
