@@ -1,5 +1,5 @@
 .container{
-    height: 100vh;
+    /* height: 100vh; */
     max-width: 1124px;
     margin: 0 auto;
     display: flex;
@@ -7,21 +7,25 @@
     overflow-y: hidden;
 }
 
-@media(max-width: 720px){
-    .container {
-        flex-direction: column;
-        padding: 0 1rem;
-    }
-}
-
 .block {
     display: flex;
     flex-direction: column;
     flex: 1;
     height: 100%;
-    overflow-y: scroll;
+    padding-left: 230px;
 }
 
 .block > * {
     margin-top: 4rem;
+}
+
+@media(max-width: 720px){
+    .container {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .block {
+        padding-left: 0;
+        padding-top: 8rem;
+    }
 }

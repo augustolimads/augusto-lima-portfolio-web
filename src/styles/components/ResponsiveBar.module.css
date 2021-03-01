@@ -1,3 +1,10 @@
+.responsiveBar {
+    position: fixed;
+    background-color: var(--white);
+    width: 100vw;
+    padding-right: 2rem;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -5,7 +12,7 @@
     margin-bottom: 1rem;
 }
 
-.responsiveBar section{
+.responsiveBar section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,13 +20,13 @@
     padding: 1rem;
 }
 
-@media(min-width: 721px){
+@media(min-width: 721px) {
     .responsiveBar {
         display: none;
     }
 }
 
-.filter input{
+.filter input {
     background-color: var(--light);
     border: none;
     padding: 0.2rem;
@@ -33,14 +40,14 @@
 
 .filter ul {
     list-style-type: none;
-    display: flex;    
+    display: flex;
 }
 
-.filter ul > * + * {
+.filter ul>*+* {
     margin-left: 1rem;
 }
 
-.filter li{
+.filter li {
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -48,7 +55,7 @@
     padding-right: 1rem;
 }
 
-.filter li:hover{
+.filter li:hover {
     cursor: pointer;
     background-color: var(--light);
 }
@@ -67,7 +74,7 @@
     margin-right: .4rem;
 }
 
-.responsiveBar button{
+.responsiveBar button {
     border: none;
     background-color: transparent;
     display: flex;
@@ -76,6 +83,6 @@
     font-size: 2.5rem;
 }
 
-.responsiveBar button:active{
+.responsiveBar button:active {
     color: var(--primary)
 }

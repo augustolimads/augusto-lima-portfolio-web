@@ -1,8 +1,10 @@
 .sidebar {
+    position: fixed;
+    background-color: var(--white);
     max-width: 230px;
     min-width: 175px;
     margin-right: 2rem;
-    padding: 4rem 0;
+    padding: 4rem 2rem 4rem 0;
 }
 
 @media(max-width: 720px){
@@ -11,9 +13,6 @@
     }
 
     .sidebar {
-        position: fixed;
-        z-index: 2;
-        background-color: var(--white);
         padding: 1rem;
         height: 100%;
         margin-right: 0;
