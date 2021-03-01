@@ -5,18 +5,11 @@ import { HiMenu, HiSearch, HiPhotograph, HiDocumentText } from "react-icons/hi";
 import data from "../utils/data";
 import { useResponsiveMenu } from "../contexts/ResponsiveContext";
 import animation from "../styles/animations/Slider.module.css";
+import { useFilter } from "../contexts/FilterContext";
 
 export default function Sidebar() {
-	const [selectedFilter, setSelectedFilter] = useState<string>("");
 	const { menuActive, animationSlider } = useResponsiveMenu();
-
-	function handleSelectedFilter(name: string) {
-		if (name === selectedFilter) {
-			setSelectedFilter("");
-		} else {
-			setSelectedFilter(name);
-		}
-	}
+	const { onFilterArticle, onFilterPortfolio, filterPost } = useFilter();
 
 	return (
 		<div className={menuActive ? style.visible : style.invisible}>
@@ -61,11 +54,11 @@ export default function Sidebar() {
 					/>
 				</div> */}
 						<ul>
-							<li onClick={() => handleSelectedFilter("ARTIGOS")}>
+							<li onClick={onFilterArticle}>
 								<div
 									style={{
 										width:
-											selectedFilter === "ARTIGOS"
+											filterPost === "article"
 												? ".5rem"
 												: 0,
 									}}
@@ -75,15 +68,11 @@ export default function Sidebar() {
 								</i>
 								<span>Artigos</span>
 							</li>
-							<li
-								onClick={() =>
-									handleSelectedFilter("PORTFOLIO")
-								}
-							>
+							<li onClick={onFilterPortfolio}>
 								<div
 									style={{
 										width:
-											selectedFilter === "PORTFOLIO"
+											filterPost === "portfolio"
 												? ".5rem"
 												: 0,
 									}}
