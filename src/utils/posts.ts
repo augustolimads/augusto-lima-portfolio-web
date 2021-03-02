@@ -1,6 +1,7 @@
 const posts = [
 	{
 		id: 1,
+		link: 'https://www.google.com',
         type: 'article',
 		title: "Teste01",
         time: '1 ano atrás',
@@ -11,6 +12,7 @@ const posts = [
 	},
 	{
 		id: 2,
+		link: 'https://www.google.com',
         type: 'portfolio',
 		title: "Teste02",
         time: '1 ano atrás',
@@ -21,6 +23,7 @@ const posts = [
 	},
 	{
 		id: 3,
+		link: 'https://www.google.com',
         type: 'article',
 		title: "Teste03",
         time: '1 ano atrás',
@@ -33,6 +36,7 @@ const posts = [
 	},
 	{
 		id: 4,
+		link: 'https://www.google.com',
         type: 'portfolio',
 		title: "Teste04",
         time: '1 ano atrás',
@@ -45,6 +49,7 @@ const posts = [
 	},
 	{
 		id: 5,
+		link: 'https://www.google.com',
         type: 'article',
 		title: "Teste05",
         time: '1 ano atrás',
@@ -59,6 +64,7 @@ const posts = [
 	},
 	{
 		id: 6,
+		link: 'https://www.facebook.com',
         type: 'portfolio',
 		title: "Teste06",
         time: '1 ano atrás',
