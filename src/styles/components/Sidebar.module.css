@@ -10,6 +10,9 @@
     flex: 1;
 }
 
+.logoLink{
+    opacity: 1;
+}
 
 @media(max-width: 720px) {
     .visible {
@@ -27,6 +30,10 @@
         height: 100%;
         margin-right: 0;
         box-shadow: 5px 0px 10px 1px rgba(204, 204, 204, 0.452);
+    }
+
+    .logoLink{
+        opacity: 0;
     }
 }
 

@@ -18,7 +18,7 @@ export default function Sidebar() {
 				<aside className={style.sidebar}>
 					<section className={style.header}>
 						<Link href="/">
-							<a>
+							<a className={style.logoLink}>
 								<Logo />
 							</a>
 						</Link>
