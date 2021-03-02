@@ -5,7 +5,7 @@
     min-width: 175px;
     margin-right: 2rem;
     padding: 4rem 2rem 4rem 0;
-    background-color: var(--white);
+    background-color: var(--background);
     height: 100%;
     flex: 1;
 }
@@ -66,7 +66,7 @@
 }
 
 .aboutMe hr {
-    border: 1px solid var(--light);
+    border: 1px solid var(--highlight);
     border-radius: 1px;
 }
 
@@ -78,13 +78,13 @@
 .search {
     display: flex;
     align-items: center;
-    background-color: var(--light);
+    background-color: var(--highlight);
     border-radius: 4px;
     padding: 0.5rem;
 }
 
 .filter input {
-    background-color: var(--light);
+    background-color: var(--highlight);
     border: none;
     padding: 0.2rem;
     width: 100%;
@@ -92,7 +92,7 @@
 }
 
 .filter input:focus {
-    outline-color: var(--light);
+    outline-color: var(--highlight);
 }
 
 .filter ul {
@@ -113,7 +113,7 @@
 
 .filter li:hover {
     cursor: pointer;
-    background-color: var(--light);
+    background-color: var(--highlight);
 }
 
 .filter ul div {

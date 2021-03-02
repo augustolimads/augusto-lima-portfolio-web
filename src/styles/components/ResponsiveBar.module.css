@@ -1,6 +1,6 @@
 .responsiveBar {
     position: fixed;
-    background-color: var(--white);
+    background-color: var(--background);
     width: 100vw;
     padding: 1rem 2rem 1rem 1rem;
     display: flex;
@@ -16,7 +16,7 @@
 }
 
 .filter input {
-    background-color: var(--light);
+    background-color: var(--highlight);
     border: none;
     padding: 0.2rem;
     width: 100%;
@@ -24,7 +24,7 @@
 }
 
 .filter input:focus {
-    outline-color: var(--light);
+    outline-color: var(--highlight);
 }
 
 .filter ul {
@@ -46,7 +46,7 @@
 
 .filter li:hover {
     cursor: pointer;
-    background-color: var(--light);
+    background-color: var(--highlight);
 }
 
 .filter ul div {

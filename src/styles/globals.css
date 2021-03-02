@@ -1,10 +1,16 @@
 :root{
-    --white: #fff;
+    --background: #fff;
     --primary: #00FA9A;
-    --light: #EFE9F4;
-    --dark: #2A2A3E;
-    --dark-highlight: #4B4B6D;
+    --highlight: #EFE9F4;
+    --text: #2A2A3E;
 }
+
+/* .dark-mode:root{
+    --background: #2A2A3E;
+    --primary: #00FA9A;
+    --highlight: #4e4e70;
+    --text: #EFE9F4;
+} */
 
 @media(max-width: 1080px){
     html{
@@ -26,8 +32,8 @@
 }
 
 body {
-    background:var(--white);
-    color: var(--dark);
+    background:var(--background);
+    color: var(--text);
 }
 
 body, input, textarea, button{

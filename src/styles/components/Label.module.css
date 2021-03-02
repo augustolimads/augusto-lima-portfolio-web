@@ -1,5 +1,5 @@
 .label {
-    background-color: var(--light);
+    background-color: var(--highlight);
     border-radius: 4px;
     display: inline;
     padding: .3rem .6rem;

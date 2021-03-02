@@ -5,7 +5,9 @@ import Label from "./Label";
 export default function GalleryPost({ post }) {
 	return (
 		<div className={style.galleryPost} key={post.id}>
-			<img src={post.img} alt="post" />
+			<div className={style.image}>
+				<img src={post.img} alt="post" />
+			</div>
 			<section>
 				<div>
 					<h2>{post.title}</h2>
