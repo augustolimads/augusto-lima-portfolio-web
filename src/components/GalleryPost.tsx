@@ -12,7 +12,7 @@ export default function GalleryPost({ post }) {
 				<section>
 					<div>
 						<h2>{post.title}</h2>
-						<span>{post.time}</span>
+						<span>{post.date}</span>
 					</div>
 					<p>{post.content}</p>
 					<div className={style.tagList}>
