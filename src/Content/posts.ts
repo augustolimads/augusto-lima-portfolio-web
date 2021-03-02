@@ -4,7 +4,7 @@ const posts = [
 		link: 'https://www.google.com',
         type: 'article',
 		title: "Teste01",
-        time: '1 ano atrás',
+        time: '02/03/2021',
 		content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin cursus dui eu turpis cursus.`,
 		img: "images/augusto.jpg",

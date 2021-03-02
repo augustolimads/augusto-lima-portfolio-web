@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import style from "../styles/components/Sidebar.module.css";
 import { HiMenu, HiSearch, HiPhotograph, HiDocumentText } from "react-icons/hi";
-import data from "../utils/data";
+import data from "../Content/data";
 import { useResponsiveMenu } from "../contexts/ResponsiveContext";
 import animation from "../styles/animations/Slider.module.css";
 import { useFilter } from "../contexts/FilterContext";
