@@ -1,17 +1,4 @@
-interface Posts {
-	[index: number]: {
-		id: number;
-		link: string;
-		type: "portfolio" | "article";
-		title: string;
-		date: string;
-		content: string;
-		img: string;
-		labels: string[];
-	};
-};
-
-const posts: Posts = [
+const posts = [
 	{
 		id: 1,
 		link: "https://app-conta-casal-git-main.augustolimads.vercel.app/",
