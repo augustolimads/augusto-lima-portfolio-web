@@ -3,6 +3,7 @@ import Link from "next/link";
 import style from "../styles/components/ResponsiveBar.module.css";
 import { HiDocumentText, HiMenu, HiPhotograph } from "react-icons/hi";
 import { useResponsiveMenu } from "../contexts/ResponsiveContext";
+import Logo from "./Logo";
 export default function ResponsiveBar() {
 	const [selectedFilter, setSelectedFilter] = useState<string>("");
 	const { handleMenuActive } = useResponsiveMenu();
@@ -19,7 +20,7 @@ export default function ResponsiveBar() {
 		<header className={style.responsiveBar}>
 			<Link href="/">
 				<a>
-					<img src="icons/logo.svg" alt="" />
+					<Logo />
 				</a>
 			</Link>
 			<button onClick={handleMenuActive}>

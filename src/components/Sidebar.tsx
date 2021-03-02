@@ -6,6 +6,7 @@ import data from "../Content/data";
 import { useResponsiveMenu } from "../contexts/ResponsiveContext";
 import animation from "../styles/animations/Slider.module.css";
 import { useFilter } from "../contexts/FilterContext";
+import Logo from "./Logo";
 
 export default function Sidebar() {
 	const { menuActive, animationSlider } = useResponsiveMenu();
@@ -18,7 +19,7 @@ export default function Sidebar() {
 					<section className={style.header}>
 						<Link href="/">
 							<a>
-								<img src="icons/logo.svg" alt="" />
+								<Logo />
 							</a>
 						</Link>
 					</section>
