@@ -5,9 +5,7 @@ const posts = [
 		title: "Teste01",
         time: '1 ano atrás',
 		content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Proin cursus dui eu turpis cursus, id dapibus quam
-        efficitur. Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor.`,
+        Proin cursus dui eu turpis cursus.`,
 		img: "images/augusto.jpg",
 		labels: ["css", "js", "html"],
 	},
@@ -17,11 +15,7 @@ const posts = [
 		title: "Teste02",
         time: '1 ano atrás',
 		content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Proin cursus dui eu turpis cursus, id dapibus quam
-        efficitur. Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor. 
-        Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor.`,
+        `,
 		img: "images/teste02.png",
 		labels: ["html"],
 	},
@@ -33,16 +27,7 @@ const posts = [
 		content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin cursus dui eu turpis cursus, id dapibus quam
         efficitur. Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor. 
-        Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor.
-        
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Proin cursus dui eu turpis cursus, id dapibus quam
-        efficitur. Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor. 
-        Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor.`,
+        posuere auctor tortor. `,
 		img: "images/augusto.jpg",
 		labels: ["html"],
 	},
@@ -79,17 +64,7 @@ const posts = [
         time: '1 ano atrás',
 		content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Proin cursus dui eu turpis cursus, id dapibus quam
-        efficitur. Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor. 
-        Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor.
-        
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Proin cursus dui eu turpis cursus, id dapibus quam
-        efficitur. Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor. 
-        Proin urna dolor, tincidunt non magna eget,
-        posuere auctor tortor.`,
+        efficitur.`,
 		img: "images/augusto.jpg",
 		labels: ["html"],
 	},

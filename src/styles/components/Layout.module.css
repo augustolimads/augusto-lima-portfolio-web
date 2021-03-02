@@ -22,29 +22,32 @@
     }
 }
 
-.block section {
+.masonry {
     padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: masonry;
+    columns: 3;
     gap: 1.5rem;
 }
 
+.masonry > * {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+}
+
 @media(min-width: 2000px) {
-    .block section {
-        grid-template-columns: repeat(4, 1fr);
+    .masonry {
+        columns: 4;
     }
 }
 
 @media(max-width: 900px) {
-    .block section {
-        grid-template-columns: repeat(2, 1fr);
+    .masonry {
+        columns: 2;
     }
 }
 
 @media(max-width: 420px) {
-    .block section {
-        grid-template-columns: 1fr;
+    .masonry {
+        columns: 1;
     }
 }
 

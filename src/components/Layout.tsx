@@ -9,7 +9,7 @@ export default function Layout({ children }) {
 			<ResponsiveBar />
 			<Sidebar />
 			<main className={style.block}>
-				<section>{children}</section>
+				<section className={style.masonry}>{children}</section>
 				<footer>
 					<p>
 						Desenvolvido por ©Augusto Lima -{" "}
