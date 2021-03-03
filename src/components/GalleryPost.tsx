@@ -8,6 +8,7 @@ export default function GalleryPost({ post }) {
 			<a href={post.link} target="_blank">
 				<div className={style.image}>
 					<img src={post.img} alt="post" />
+					<p className={style.msgHover}>Visitar Link</p>
 				</div>
 				<section>
 					<div>

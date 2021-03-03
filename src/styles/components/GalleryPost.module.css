@@ -3,11 +3,26 @@
     flex-direction: column;
     border-radius: 1rem;
     transition: .3s ease;
+    box-shadow: 5px 5px 10px 1px rgba(204, 204, 204, 0.452);
 }
 
-.galleryPost:hover{
+.msgHover {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.galleryPost:hover .msgHover{
+    opacity: 1;
     cursor: pointer;
-    border-radius: 1rem;
+}
+
+.galleryPost:hover :is(img, section) {    
     opacity: .6;
 }
 
@@ -30,6 +45,10 @@
 .tagList *{
     margin-left: .4rem;
     margin-top: .4rem;
+}
+
+.galleryPost .image {
+    position: relative;
 }
 
 .galleryPost .image img {
