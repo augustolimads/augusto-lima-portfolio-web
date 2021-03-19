@@ -37,23 +37,9 @@ export default function Sidebar() {
 							<p>Currículo</p>
 						</a>
 
-						<hr />
 					</section>
 
-					<section className={style.filter}>
-						{/* <div className={style.search}>
-					<label htmlFor="search">
-						<i>
-							<HiSearch />
-						</i>
-					</label>
-					<input
-						id="search"
-						name="search"
-						type="text"
-						placeholder="Pesquisar tag"
-					/>
-				</div> */}
+					{/* <section className={style.filter}>						
 						<ul>
 							<li onClick={onFilterArticle}>
 								<div
@@ -84,7 +70,7 @@ export default function Sidebar() {
 								<span>Portfólio</span>
 							</li>
 						</ul>
-					</section>
+					</section> */}
 				</aside>
 			</div>
 		</div>
