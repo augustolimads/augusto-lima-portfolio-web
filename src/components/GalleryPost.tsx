@@ -8,21 +8,25 @@ export default function GalleryPost({ post }) {
 			<a href={post.link} target="_blank">
 				<div className={style.image}>
 					<img src={post.img} alt="post" />
-					<p className={style.msgHover}>Visitar Link</p>
 				</div>
-				<section>
-					<div>
-						<h2>{post.title}</h2>
-						<span>{post.date}</span>
-					</div>
-					<p>{post.content}</p>
-					<div className={style.tagList}>
+			</a>
+			<section>
+				<div>
+					<h2>{post.title}</h2>
+					<span>{post.date}</span>
+				</div>
+				<p>{post.content}</p>
+				<div>
+					<a href={post.link} target="_blank">Github</a>
+					<a href={post.link} target="_blank">Demo</a>
+				</div>
+				{/* <div className={style.tagList}>
 						{post.labels.map((label) => (
 							<Label>{label}</Label>
 						))}
-					</div>
-				</section>
-			</a>
+					</div> */}
+			</section>
+
 		</div>
 	);
 }

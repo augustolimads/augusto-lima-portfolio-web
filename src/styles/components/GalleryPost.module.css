@@ -2,28 +2,11 @@
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    transition: .3s ease;
-    box-shadow: 5px 5px 10px 1px rgba(204, 204, 204, 0.452);
+    transition: .2s ease-out;
+    box-shadow: 2px 2px 5px 1px rgba(204, 204, 204, 0.452);
 }
-
-.msgHover {
-    position: absolute;
-    top: 50%;
-    right: 35%;
-    background-color: var(--primary);
-    padding: 1rem;
-    border-radius: 4px;
-    font-weight: 500;
-    opacity: 0;
-}
-
-.galleryPost:hover .msgHover{
-    opacity: 1;
-    cursor: pointer;
-}
-
-.galleryPost:hover :is(img, section) {    
-    opacity: .6;
+.galleryPost:hover {
+    box-shadow: 5px 10px 15px 3px rgba(204, 204, 204, 0.322);
 }
 
 .galleryPost section {
