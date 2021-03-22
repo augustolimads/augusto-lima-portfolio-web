@@ -16,7 +16,7 @@ export default function GalleryPost({ post }) {
 					<span>{post.date}</span>
 				</div>
 				<p>{post.content}</p>
-				<div>
+				<div className={style.groupButton}>
 					<a href={post.link} target="_blank">Github</a>
 					<a href={post.link} target="_blank">Demo</a>
 				</div>

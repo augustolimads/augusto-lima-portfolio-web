@@ -40,3 +40,24 @@
     height: auto;
     border-radius: 1rem 1rem 0 0;
 }
+
+.groupButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.groupButton > * + * {
+    margin-left: 0.5rem;
+}
+
+.groupButton a {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.groupButton a:hover {
+    background-color: var(--text);
+}

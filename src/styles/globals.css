@@ -1,13 +1,13 @@
 :root {
     --background: #fff;
-    --primary: #00FA9A;
+    --primary: #032eff;
     --highlight: #EFE9F4;
-    --text: #2A2A3E;
+    --text: #101010;
 }
 
 ::selection {
-    color: var(--primary);
-    background: var(--text);
+    color: var(--background);
+    background: var(--primary);
 }
 
 @media(max-width: 1080px) {
