@@ -51,13 +51,14 @@
 }
 
 .groupButton a {
-    background-color: var(--primary);
-    color: var(--background);
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: 0.3s ease;
+    color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .groupButton a:hover {
-    background-color: var(--text);
+    background-color: var(--primary);
+    color: var(--background);
 }
