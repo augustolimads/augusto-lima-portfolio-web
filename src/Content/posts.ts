@@ -1,6 +1,7 @@
 const posts = [
 	{
 		id: 1,
+		github: "https://github.com/augustolimads/app-conta-casal",
 		link: "https://app-conta-casal-git-main.augustolimads.vercel.app/",
 		type: "portfolio",
 		title: "Calculadora de finanças para casal",
@@ -12,6 +13,7 @@ const posts = [
 	},
 	{
 		id: 2,
+		github: "https://github.com/augustolimads/Animelovers",
 		link: "https://animelovers-gamma.vercel.app/",
 		type: "portfolio",
 		title: "Animelovers - lista de animes",
@@ -23,6 +25,7 @@ const posts = [
 	},
 	{
 		id: 3,
+		github: "https://github.com/augustolimads/digipet-emoji",
 		link: "https://augustolimads.github.io/digipet-emoji/",
 		type: "portfolio",
 		title: "Digipet Emoji - pet virtual",

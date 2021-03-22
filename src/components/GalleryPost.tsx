@@ -17,7 +17,7 @@ export default function GalleryPost({ post }) {
 				</div>
 				<p>{post.content}</p>
 				<div className={style.groupButton}>
-					<a href={post.link} target="_blank">Github</a>
+					<a href={post.github} target="_blank">Github</a>
 					<a href={post.link} target="_blank">Demo</a>
 				</div>
 				{/* <div className={style.tagList}>
